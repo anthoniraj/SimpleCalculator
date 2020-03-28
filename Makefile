@@ -1,5 +1,5 @@
 cc=g++
-CFLAGS=-c -Wall -std=c++17
+CFLAGS=-c -Wall
 
 ifeq '$(findstring ;,$(PATH))' ';'
     detected_OS := Windows
@@ -12,7 +12,7 @@ endif
 
 all: calc
 calc: app.cpp
-	$(cc) $(CLFLAGS) app.cpp -o calc	
+	$(cc) $(CLFLAGS) --std=c++17 app.cpp -o calc	
 install:
 ifeq ($(detected_OS),Windows)
 	COPY calc C:\Windows\System32
@@ -21,7 +21,7 @@ else
 endif	
 clean:
 ifeq ($(detected_OS),Windows)
-	DEL console.o calc
+	DEL app.o calc
 else
-	rm -rf console.o calc
+	rm -rf app.o calc
 endif
