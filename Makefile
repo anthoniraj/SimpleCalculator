@@ -12,7 +12,7 @@ endif
 
 all: calc
 calc: app.cpp
-	$(cc) $(CLFLAGS) --std=c++17 app.cpp -o calc	
+	$(cc) $(CLFLAGS) --std=c++17 app.cpp calculator.h mylibrary.h -o calc	
 install:
 ifeq ($(detected_OS),Windows)
 	COPY calc C:\Windows\System32
