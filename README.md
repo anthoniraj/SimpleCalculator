@@ -12,4 +12,5 @@
 * type the following commands
    * __make__
    * __make install__
+   * __make clean__
 * Then type "calc" in your terminal to access the calculator
