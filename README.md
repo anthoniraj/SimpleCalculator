@@ -12,4 +12,4 @@ Installing Application
     type the following commands
         make
         make install
-    Then type calc in your terminal to access the calculator
+    Then type "calc" in your terminal to access the calculator
