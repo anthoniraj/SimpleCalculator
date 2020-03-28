@@ -13,4 +13,4 @@ type the following commands
 make
 make install
 
-then type calc in your terminal to access the calculator
+Then type calc in your terminal to access the calculator
