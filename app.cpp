@@ -1,5 +1,4 @@
-#include "calculator.h"
-#include "mylibrary.h"
+#include "calculator.hpp"
 
 /*
     Author      : Anthoniraj Amalanathan
