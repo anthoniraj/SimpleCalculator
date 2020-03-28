@@ -16,7 +16,7 @@ int main() {
   do {
     std::cout << ">>>";
     getline(std::cin, input);
-    if (input.find_first_not_of("0123456789+-*/!") != std::string::npos) {
+    if (input.find_first_not_of("0123456789.+-*/!") != std::string::npos) {
       std::cerr << "Only Numbers and Operators are allowed Eg: 10.0 * 34.5" << "\n";
     } else if (findSymbol(input, '+')) {
       std::cout << calc.addition(input) << "\n";
