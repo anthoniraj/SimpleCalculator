@@ -8,10 +8,11 @@
 using namespace std;
 int main()
 {
-  std::string x("1+2");
-  if (x.find_first_not_of("0123456789+-*/!") !=
-      std::string::npos) {
+  std::string x("0 + 4");
+  if (x.find_first_not_of("0123456789+-*/!. ") !=std::string::npos) {
     std::cerr << "Error\n";
+  }else{
+    cout << "Contains valid data" << "\n";
   }
     return 0;
 }
